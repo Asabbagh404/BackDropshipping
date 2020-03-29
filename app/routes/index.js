@@ -7,11 +7,7 @@ reverse.get('/', function (req, res) {
     res.send('no path');
 });
 
-// About page route.
-reverse.get('/reverse', function (req, res) {
-    res.send('no parameters');
-});
+reverse.get('/reverse', reverse_controller.index);
 
-reverse.get('/reverse/:url', reverse_controller.index);
 
 module.exports = reverse;

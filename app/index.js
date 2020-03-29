@@ -1,5 +1,8 @@
+///Express
 var express = require ('express');
 const app = express();
+
+///Router
 var router = require('./routes/index');
 
 app.use('/api', router);
