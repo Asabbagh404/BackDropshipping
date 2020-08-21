@@ -1,13 +1,13 @@
 var express = require('express');
 var reverse = express.Router();
 
-var reverse_controller = require('../controllers/reverseController');
+var reverseController = require('../controllers/reverse_controller');
 // Home page route.
 reverse.get('/', function (req, res) {
     res.send('no path');
 });
 
-reverse.get('/reverse', reverse_controller.index);
+reverse.get('/reverse', reverseController.index);
 
 
 module.exports = reverse;

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app/index.js"
+    "start": "babel-node app/index.js"
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,18 @@
   },
   "homepage": "https://github.com/Asabbagh404/BackDropshipping#readme",
   "dependencies": {
+    "@std/esm": "^0.26.0",
+    "ajax-request": "^1.2.3",
+    "axios": "^0.19.2",
     "express": "^4.17.1",
-    "tineye-api": "^1.1.2"
+    "node-html-parser": "^1.2.20",
+    "reverse-image-search": "0.0.0",
+    "tineye-api": "^1.1.2",
+    "valid-url": "^1.0.9"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.10.4"
   }
 }
